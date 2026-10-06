@@ -1,0 +1,104 @@
+{
+  "commit": "909e68c01d94222b8ad2e397a017e2e12e2adb73",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/LICENSE",
+      "sha256": "09017abee723a7b715866bbcd1bd2569e0a5fa7e996dd1d9d1ec4b36fb5ca51c",
+      "bytes": 1098,
+      "observed_utc": "2026-10-04T03:40:07.077765+00:00",
+      "cached": true
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/README.md",
+      "sha256": "cc0b5cacb5b9a7ef66d209abf242a8981514713de26dcf5df7f756da3d1bbf7a",
+      "bytes": 1690,
+      "observed_utc": "2026-10-02T22:31:22.110893+00:00"
+    },
+    {
+      "path": "attack-artifacts/DSN/white_box/llama-2-7b-chat-hf.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/DSN/white_box/llama-2-7b-chat-hf.json",
+      "sha256": "9bcdbe88b18e729ca9abf593d3e5141e7958aff0eb3a0e62ae92b8f64acbdcd9",
+      "bytes": 126910,
+      "observed_utc": "2026-10-04T03:40:07.077884+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/DSN/white_box/vicuna-13b-v1.5.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/DSN/white_box/vicuna-13b-v1.5.json",
+      "sha256": "ea0a5f7331baf595fb6e6925423f43367cbce8da9273ce93c6a03e2201e3373d",
+      "bytes": 128486,
+      "observed_utc": "2026-10-04T03:40:07.078022+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/GCG/white_box/llama-2-7b-chat-hf.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/GCG/white_box/llama-2-7b-chat-hf.json",
+      "sha256": "f76cbaf899c79ca8eed6a6ed26d6f8789933c5595a9a5ee028e305dec4dd95f7",
+      "bytes": 141247,
+      "observed_utc": "2026-10-04T03:40:07.078138+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/GCG/white_box/vicuna-13b-v1.5.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/GCG/white_box/vicuna-13b-v1.5.json",
+      "sha256": "9eff8b6f78cae002737868ca8cdd886be5afcd1cbbbe4cf51ff837bc688b01b1",
+      "bytes": 134533,
+      "observed_utc": "2026-10-04T03:40:07.078244+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/JBC/manual/llama-2-7b-chat-hf.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/JBC/manual/llama-2-7b-chat-hf.json",
+      "sha256": "1607a5a5b9f50abc7f2ff9e07b7257dfde7228b88cfdf73c20f5f56108ffdd23",
+      "bytes": 305856,
+      "observed_utc": "2026-10-04T03:40:07.078453+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/JBC/manual/vicuna-13b-v1.5.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/JBC/manual/vicuna-13b-v1.5.json",
+      "sha256": "1d5df5aa451c3d1bb8a4c048a7b2e1e6132e72f2970cb9d94ffc77f44e0edb39",
+      "bytes": 298772,
+      "observed_utc": "2026-10-04T03:40:07.078760+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/PAIR/black_box/llama-2-7b-chat-hf.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/PAIR/black_box/llama-2-7b-chat-hf.json",
+      "sha256": "02819296c5d992568d732d37813b2ce34624068a20f21025c04c04d52820b029",
+      "bytes": 59328,
+      "observed_utc": "2026-10-04T03:40:07.078861+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/PAIR/black_box/vicuna-13b-v1.5.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/PAIR/black_box/vicuna-13b-v1.5.json",
+      "sha256": "18b101386419a98fbdf45cb987069f83af3a40d5e0f7f0d32c4e9dc5ecc049b4",
+      "bytes": 149383,
+      "observed_utc": "2026-10-04T03:40:07.079057+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/black_box/llama-2-7b-chat-hf.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/prompt_with_random_search/black_box/llama-2-7b-chat-hf.json",
+      "sha256": "45df98af6e1c0e35747f6b9c80cdc606e96c76a511e09a1a49ad5b00cfb51c0a",
+      "bytes": 351767,
+      "observed_utc": "2026-10-04T03:40:07.079437+00:00",
+      "cached": true
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/black_box/vicuna-13b-v1.5.json",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/prompt_with_random_search/black_box/vicuna-13b-v1.5.json",
+      "sha256": "9d87a56659f617438feb5770bb2c8e4c2dbbd1bd62964f2c1a8775988017ac5d",
+      "bytes": 322732,
+      "observed_utc": "2026-10-04T03:40:07.079758+00:00",
+      "cached": true
+    }
+  ],
+  "derived_files": {
+    "data/processed/excluded_slots.csv": "07fa9a931e52e0b345f678d42008775d6be3f45429f6f4284919cef04eedf049",
+    "data/processed/metadata.csv": "0e93e11bf2761288d57676980864ee03f3c92da9c8ca020a645f865ede57ecce"
+  }
+}
