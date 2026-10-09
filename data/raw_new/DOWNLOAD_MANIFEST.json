@@ -1,0 +1,167 @@
+{
+  "repository": "https://github.com/JailbreakBench/artifacts",
+  "revision": "909e68c01d94222b8ad2e397a017e2e12e2adb73",
+  "verification": "Every upstream file verified against Git blob SHA-1 and byte size; all JSON parsed.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "e43b0f988953ae3a84b00331d0ccf5f7d51cb3cf",
+      "size": 10
+    },
+    {
+      "path": "LICENSE",
+      "sha": "25d48e0002fec6900c0b4bdb2c0e098cb5b30165",
+      "size": 1098
+    },
+    {
+      "path": "README.md",
+      "sha": "fd94df835e7036172374a36b117d1f4a785859d2",
+      "size": 1690
+    },
+    {
+      "path": "attack-artifacts/DSN/attack-info.json",
+      "sha": "f8b454c8ef69ceb9f995c8e81418ada147ae8dda",
+      "size": 100
+    },
+    {
+      "path": "attack-artifacts/DSN/evaluation.json",
+      "sha": "e639e3423bda5336d5644753cc9d603786a19935",
+      "size": 182747
+    },
+    {
+      "path": "attack-artifacts/DSN/submission.json",
+      "sha": "d14195685d246390ec9b307d2a11aa7f6abdf96e",
+      "size": 529790
+    },
+    {
+      "path": "attack-artifacts/DSN/white_box/llama-2-7b-chat-hf.json",
+      "sha": "30b669bd64048befad5ec881af17a6641c1f4ba4",
+      "size": 126910
+    },
+    {
+      "path": "attack-artifacts/DSN/white_box/vicuna-13b-v1.5.json",
+      "sha": "a448011b598649e791a51b2a051e9b97d55598d9",
+      "size": 128486
+    },
+    {
+      "path": "attack-artifacts/GCG/attack-info.json",
+      "sha": "cfa7011811f9e587de2907d403b18548a07ce3b4",
+      "size": 180
+    },
+    {
+      "path": "attack-artifacts/GCG/transfer/gpt-3.5-turbo-1106.json",
+      "sha": "f2105afd52c2890d620b25ccd92895f7f151f567",
+      "size": 128899
+    },
+    {
+      "path": "attack-artifacts/GCG/transfer/gpt-4-0125-preview.json",
+      "sha": "3e18760bd1f53aa1e7f174d1108fb5d5c18fab80",
+      "size": 94384
+    },
+    {
+      "path": "attack-artifacts/GCG/white_box/llama-2-7b-chat-hf.json",
+      "sha": "8f862b3a8f3358573b75b0c5823bb636a6b8ad2e",
+      "size": 141247
+    },
+    {
+      "path": "attack-artifacts/GCG/white_box/vicuna-13b-v1.5.json",
+      "sha": "1430aafc1795106ac89555b8ede5eee925d90e00",
+      "size": 134533
+    },
+    {
+      "path": "attack-artifacts/JBC/attack-info.json",
+      "sha": "971c0da684e7285c8b0fef3724d571e3f46b2aaa",
+      "size": 170
+    },
+    {
+      "path": "attack-artifacts/JBC/manual/gpt-3.5-turbo-1106.json",
+      "sha": "3a5a0ecbe720322f9906171830bb36b158f533b2",
+      "size": 241037
+    },
+    {
+      "path": "attack-artifacts/JBC/manual/gpt-4-0125-preview.json",
+      "sha": "4d78bce84b1347a5142d00fafa0fd512361d5092",
+      "size": 241354
+    },
+    {
+      "path": "attack-artifacts/JBC/manual/llama-2-7b-chat-hf.json",
+      "sha": "67dc239280bdf6f74bce03903637bb347396cb1c",
+      "size": 305856
+    },
+    {
+      "path": "attack-artifacts/JBC/manual/vicuna-13b-v1.5.json",
+      "sha": "d43fd92449d43cc6298aafbc0b3004e6a5a9f191",
+      "size": 298772
+    },
+    {
+      "path": "attack-artifacts/PAIR/attack-info.json",
+      "sha": "f395323e3c6362e4a7a7677c1e4b68781a46e839",
+      "size": 182
+    },
+    {
+      "path": "attack-artifacts/PAIR/black_box/gpt-3.5-turbo-1106.json",
+      "sha": "9612434c11c29492ae83fe160d466285b32114a8",
+      "size": 164371
+    },
+    {
+      "path": "attack-artifacts/PAIR/black_box/gpt-4-0125-preview.json",
+      "sha": "2cf9a9f948c16ea039ecf379de46d540b46687e4",
+      "size": 135998
+    },
+    {
+      "path": "attack-artifacts/PAIR/black_box/llama-2-7b-chat-hf.json",
+      "sha": "10af967c0fd9b1cb0c6aeb0d8d649c81536fb042",
+      "size": 59328
+    },
+    {
+      "path": "attack-artifacts/PAIR/black_box/vicuna-13b-v1.5.json",
+      "sha": "482662a740e93fa0b9d1395a76f131c0af0b0068",
+      "size": 149383
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/attack-info.json",
+      "sha": "f395323e3c6362e4a7a7677c1e4b68781a46e839",
+      "size": 182
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/black_box/gpt-3.5-turbo-1106.json",
+      "sha": "8830931ad5deff86c9a246a9d800ab5b71fcb36b",
+      "size": 364405
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/black_box/gpt-4-0125-preview.json",
+      "sha": "b79435fb1da04ea37871af5194d591e4ddd5e6f1",
+      "size": 362507
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/black_box/llama-2-7b-chat-hf.json",
+      "sha": "2704f1d58f9075479120e0026bd468d3ba586dd1",
+      "size": 351767
+    },
+    {
+      "path": "attack-artifacts/prompt_with_random_search/black_box/vicuna-13b-v1.5.json",
+      "sha": "644dc4e80d57351f8e8876d3fa3fa27431cfe940",
+      "size": 322732
+    },
+    {
+      "path": "attack-artifacts/test-artifact/attack-info.json",
+      "sha": "6dee3e1a8fa1031ca5cd129b37bb6b26ba808138",
+      "size": 113
+    },
+    {
+      "path": "attack-artifacts/test-artifact/black_box/llama-2-7b-chat-hf.json",
+      "sha": "b3471bb7da17ee43b940e4c94d11677fea7907b1",
+      "size": 1134
+    },
+    {
+      "path": "attack-artifacts/test-artifact/black_box/vicuna-13b-v1.5.json",
+      "sha": "00e198578ed4cddc64519066a034b84daf39886d",
+      "size": 1131
+    },
+    {
+      "path": "attack-artifacts/test-artifact/white_box/vicuna-13b-v1.5.json",
+      "sha": "541e2cbb7595d38d69e87f4f9e4cc6aea95a446c",
+      "size": 1131
+    }
+  ]
+}
