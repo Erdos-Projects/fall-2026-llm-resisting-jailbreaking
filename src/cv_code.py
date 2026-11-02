@@ -9,6 +9,10 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import (confusion_matrix, ConfusionMatrixDisplay, precision_score,
                              recall_score, accuracy_score, f1_score, roc_auc_score, log_loss)
 
+from data_prep import load_attack_df
+
+attack_df = load_attack_df()
+
 # ---------------------------------------------------------------
 # 1. One-hot encode generating_method -> 5 columns of 0/1 (method_DSN, method_GCG, ...)
 # ---------------------------------------------------------------
@@ -21,9 +25,10 @@ method_cols = [c for c in attack_df.columns if c.startswith("method_")]
 numeric_cols = ['prompt_words', 'avg_word_len', 'non_ascii_share', 'char_entropy',
                 'emb_0', 'emb_1', 'emb_2', 'emb_3', 'emb_4',
                 'emb_5', 'emb_6', 'emb_7', 'emb_8', 'emb_9']
-bench_cols = ['arena_math', 'eqbench_v2']          # your benchmark columns (use at most 2, see notes)
-interaction_cols = [f"{b}_x_emb_{i}" for b in bench_cols for i in range(10)]  # your benchmark x embedding columns
-
+#bench_cols = ['arena_math', 'eqbench_v2']          # your benchmark columns (use at most 2, see notes)
+#interaction_cols = [f"{b}_x_emb_{i}" for b in bench_cols for i in range(10)]  # your benchmark x embedding columns
+bench_cols = ['arena_creative_writing', 'EQ_bench']
+interaction_cols = [f"{b}_emb_{i}" for b in bench_cols for i in range(10)]
 # 'model' is NOT a feature: GPT-4 is the test set, so its category never appears in training.
 # The benchmark columns are what tell the model "this is a different LLM".
 
