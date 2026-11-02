@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -135,9 +137,10 @@ for lr in [0.05, 0.1]:
 # One table per method: its hyperparameter columns + train/val metrics, best val_auc first.
 # Pick the setting with the best validation score (not the smallest train-val gap).
 tables = {method: pd.DataFrame(rows) for method, rows in results.items()}
+report_lines = []
 for method, table in tables.items():
-    print(f"\n=== {method} ===")
-    print(table.sort_values("val_auc", ascending=False).round(3).to_string(index=False))
+    block = f"\n=== {method} ===\n" + table.sort_values("val_auc", ascending=False).round(3).to_string(index=False)
+    report_lines.append(block)
 # tables["GB"] etc. are ordinary DataFrames if you want to plot or save them.
 
 # ---------------------------------------------------------------
@@ -156,12 +159,22 @@ y_pred = (y_test_score >= 0.5).astype(int)
 
 cm = confusion_matrix(y_test, y_pred, labels=[0, 1])
 ConfusionMatrixDisplay(cm, display_labels=["not jailbroken", "jailbroken"]).plot()
-plt.show()
+
+out_dir = Path(__file__).resolve().parent.parent / "deliverables"
+out_dir.mkdir(exist_ok=True)
+plt.savefig(out_dir / "confusion_matrix.png", bbox_inches="tight")
+plt.close()
 
 tn, fp, fn, tp = cm.ravel()
-print(f"TN={tn}, FP={fp}, FN={fn}, TP={tp}")
-print("Precision:", precision_score(y_test, y_pred))
-print("Recall:   ", recall_score(y_test, y_pred))
-print("Accuracy: ", accuracy_score(y_test, y_pred))
-print("F1:       ", f1_score(y_test, y_pred))
-print("AUC ROC:  ", roc_auc_score(y_test, y_test_score))
+test_lines = [
+    "GPT-4 test, LogisticRegression(C=0.1)",
+    f"TN={tn}, FP={fp}, FN={fn}, TP={tp}",
+    f"Precision: {precision_score(y_test, y_pred)}",
+    f"Recall:    {recall_score(y_test, y_pred)}",
+    f"Accuracy:  {accuracy_score(y_test, y_pred)}",
+    f"F1:        {f1_score(y_test, y_pred)}",
+    f"AUC ROC:   {roc_auc_score(y_test, y_test_score)}",
+]
+(out_dir / "cv_results.txt").write_text(
+    "\n".join(report_lines + ["", *test_lines]) + "\n", encoding="utf-8"
+)

@@ -4,6 +4,10 @@
 __pycache__/
 *.pyc
 
+# Generated CV results
+deliverables/cv_results.txt
+deliverables/confusion_matrix.png
+
 # LaTeX build files
 *.aux
 *.log
